@@ -1,0 +1,15 @@
+.main-nav {
+  height: 100%;
+}
+
+.main-nav__wrapper--modal {
+  width: calc(100% + 40px);
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 10;
+}
+
+.main-nav__list {
+  margin: 0;
+}
