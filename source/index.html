@@ -1,14 +1,350 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="./js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper page__centerer">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <img class="main-header__logo-image" src="img/logo.svg#mobile" width="34" height="38"
+            alt="Магазин CAT ENERGY.">
+        </picture>
+        <span class="main-header__description">Интернет-магазин кофейных напитков</span>
+      </a>
+
+      <nav class="main-header__nav main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper main-nav__wrapper--modal">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--light" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--light" href="#">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--light" href="#">Доставка</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--light" href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main-header__menu main-menu">
+        <ul class="main-menu__list menu-list">
+          <li class="menu-list__item">
+            Войти
+          </li>
+          <li class="menu-list__item">
+            Корзина
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    Шапка
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Drink2Go - интернет-магазин кофейных напитков</h1>
+
+    <section class="slider">
+      <div class="slider__wriper">
+        <img class="slider__img">
+      </div>
+      <h2 class="slider__title">Декаф Флэт Уайт</h2>
+      <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что
+        нужно для расслабления после тяжёлого рабочего дня</p>
+      <button class="slider__button button">Заказать</button>
+    </section>
+
+    <section class="features">
+      <p class="features__text">Преимущества</p>
+      <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+      <div class="features__cards features-cards">
+        <ul class="features-cards__list">
+          <li class="features-cards__item card-features">
+            <h3 class="card-features__title">Скорость</h3>
+            <p class="card-features__text">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="features-cards__item card-features">
+            <h3 class="card-features__title">Удобство</h3>
+            <p class="card-features__text">Легко помещается и в карман, и в маленькую сумочку</p>
+          </li>
+          <li class="features-cards__item card-features">
+            <h3 class="card-features__title">Бодрость</h3>
+            <p class="card-features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="features-cards__item card-features">
+            <h3 class="card-features__title">Экологичность</h3>
+            <p class="card-features__text">Вся упаковка сделана из перерабатываемых материалов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog__form catalog-form">
+
+      </div>
+
+      <div class="catalog__cards product">
+        <ul class="product__list product-card">
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source
+                  srcset="img/products/product1-small-desktop@1x.png, img/products/product1-small-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product1-small-tablet@1x.png, img/products/product1-small-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image product-card__image--small"
+                  src="img/products/product1-small-mobile@1x.png" srcset="img/products/product1-small-mobile@2x.png 2x"
+                  width="68" height="86" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">500 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Курица</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">700 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source srcset="img/products/product1-desktop@1x.png, img/products/product1-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product1-tablet@1x.png, img/products/product1-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image" src="img/products/product1-mobile@1x.png"
+                  srcset="img/products/product1-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">1000 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Курица</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">1000 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source
+                  srcset="img/products/product2-small-desktop@1x.png, img/products/product2-small-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product2-small-tablet@1x.png, img/products/product2-small-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image product-card__image--small"
+                  src="img/products/product2-small-mobile@1x.png" srcset="img/products/product2-small-mobile@2x.png 2x"
+                  width="68" height="86" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">500 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Рыба</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">700 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source srcset="img/products/product2-desktop@1x.png, img/products/product2-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product2-tablet@1x.png, img/products/product2-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image" src="img/products/product2-mobile@1x.png"
+                  srcset="img/products/product2-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">1000 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Рыба</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">1000 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy slim 500 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source
+                  srcset="img/products/product3-small-desktop@1x.png, img/products/product3-small-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product3-small-tablet@1x.png, img/products/product3-small-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image product-card__image--small"
+                  src="img/products/product3-small-mobile@1x.png" srcset="img/products/product3-small-mobile@2x.png 2x"
+                  width="68" height="86" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">500 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Гречка</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">400 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy slim 1000 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source srcset="img/products/product3-desktop@1x.png, img/products/product3-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product3-tablet@1x.png, img/products/product3-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image" src="img/products/product3-mobile@1x.png"
+                  srcset="img/products/product3-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">1000 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Гречка</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">700 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item">
+            <a class="product-card__link product-card__link-text" href="#">
+              <h3 class="product-card__title">Cat Energy slim 500 г</h3>
+            </a>
+            <a class="product-card__link product-card__link-image" href="#">
+
+              <picture>
+                <source
+                  srcset="img/products/product4-small-desktop@1x.png, img/products/product4-small-desktop@2x.png 2x"
+                  type="image/png" media="(min-width: 1280px)">
+
+                <source srcset="img/products/product4-small-tablet@1x.png, img/products/product4-small-tablet@2x.png 2x"
+                  type="image/png" media="(min-width: 768px)">
+
+                <img class="product-card__image product-card__image--small"
+                  src="img/products/product4-small-mobile@1x.png" srcset="img/products/product4-small-mobile@2x.png 2x"
+                  width="68" height="86" alt="Баночка кошачей еды">
+
+              </picture>
+
+            </a>
+            <dl class="product-card__description description-product">
+              <dt class="description-product__description">Масса</dt>
+              <dd class="description-product__quantity">500 г</dd>
+              <dt class="description-product__description">Вкус</dt>
+              <dd class="description-product__quantity">Рис</dd>
+              <dt class="description-product__description">Цена</dt>
+              <dd class="description-product__quantity">500 Р.</dd>
+            </dl>
+            <a class="product-card__button button button--product-card" href="#">заказать</a>
+          </li>
+
+          <li class="product-card__item product-card__item--all">
+            <a class="product-card__link product-card__link--all" href="#">
+              <h3 class="product-card__title product-card__title--all">Показать еще 100500 товаров</h3>
+            </a>
+            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+            <a class="product-card__button button button--product-card button--product-card-all" href="#">показать
+              все</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="map">
+
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+
+  </footer>
+
+
+  <script src="./js/script.js" defer></script>
+</body>
+
 </html>
