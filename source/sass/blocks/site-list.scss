@@ -18,13 +18,13 @@
   justify-content: center;
 
   &:last-of-type {
-		border-bottom: 1px solid #F0EBFF;
-	}
+    border-bottom: 1px solid #F0EBFF;
+  }
 }
 
 .site-list__link {
   display: block;
-  padding: 20px 0;
+  padding: 20px 0 23px;
   text-decoration: none;
   font-size: 12px;
   line-height: 109%;
