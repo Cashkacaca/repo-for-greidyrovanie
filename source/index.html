@@ -69,14 +69,34 @@
   <main class="main-container">
     <h1 class="visually-hidden">Drink2Go - интернет-магазин кофейных напитков</h1>
 
-    <section class="slider">
-      <div class="slider__wriper">
-        <img class="slider__img">
+    <section class="promo">
+      <div class="promo__wriper slider">
+        <div class="promo__list slider__list">
+
+          <div class="promo__item slider__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/chicken-500.webp 1x, img/chicken-500@2x.webp 2x" width="68" height="86">
+                  <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x" width="161" height="172"> -->
+              <img class="promo__img" src="img/flat-white.png" srcset="img/flat-white.png 1x, img/flat-white@2x.png 2x"
+                width="280" height="280" alt="Баночка кофе.">
+            </picture>
+            <p class="promo__text">Новинка!</p>
+            <h2 class="promo__title">Декаф Флэт Уайт</h2>
+            <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
+              то,
+              что нужно для расслабления после тяжёлого рабочего дня</p>
+            <p class="promo__price"><span class="promo__old-price">295₽</span>225₽</p>
+            <button class="slider__button button">Заказать</button>
+          </div>
+
+          <button class="promo__prev" type="button">Предыдущий товар</button>
+          <button class="promo__next" type="button">Следующий товар</button>
+
+        </div>
+
+
       </div>
-      <h2 class="slider__title">Декаф Флэт Уайт</h2>
-      <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что
-        нужно для расслабления после тяжёлого рабочего дня</p>
-      <button class="slider__button button">Заказать</button>
     </section>
 
     <section class="features">
