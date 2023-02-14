@@ -69,11 +69,11 @@
   <main class="main-container">
     <h1 class="visually-hidden">Drink2Go - интернет-магазин кофейных напитков</h1>
 
-    <section class="promo">
-      <div class="promo__wriper slider">
-        <div class="promo__list slider__list">
+    <section class="promo itc-slider">
+      <div class="promo__wriper slider itc-slider__wrapper">
+        <div class="promo__list slider__wrapper itc-slider__items">
 
-          <div class="promo__item slider__item">
+          <div class="promo__item slider__item itc-slider__item">
             <picture>
               <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
                   <source type="image/webp" srcset="img/chicken-500.webp 1x, img/chicken-500@2x.webp 2x" width="68" height="86">
@@ -86,14 +86,108 @@
             <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
               то,
               что нужно для расслабления после тяжёлого рабочего дня</p>
-            <p class="promo__price"><span class="promo__old-price">295₽</span>225₽</p>
-            <button class="slider__button button">Заказать</button>
+            <div class="promo__price-wrapper">
+              <p class="promo__price"><span class="promo__old-price">295₽</span><span
+                  class="promo__new-price">225₽</span></p>
+              <button class="promo__button button button--promo">Заказать</button>
+            </div>
           </div>
 
-          <button class="promo__prev" type="button">Предыдущий товар</button>
-          <button class="promo__next" type="button">Следующий товар</button>
+          <div class="promo__item slider__item itc-slider__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/chicken-500.webp 1x, img/chicken-500@2x.webp 2x" width="68" height="86">
+                  <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x" width="161" height="172"> -->
+              <img class="promo__img" src="img/lavender.png" srcset="img/lavender.png 1x, img/lavender@2x.png 2x"
+                width="280" height="280" alt="Баночка кофе.">
+            </picture>
+            <p class="promo__text">Новинка!</p>
+            <h2 class="promo__title">Лавандовый Латте</h2>
+            <p class="promo__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+              лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="promo__price-wrapper">
+              <p class="promo__price"><span class="promo__old-price">285₽</span><span
+                  class="promo__new-price">265₽</span></p>
+              <button class="promo__button button button--promo">Заказать</button>
+            </div>
+          </div>
+
+
+          <div class="promo__item slider__item itc-slider__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/chicken-500.webp 1x, img/chicken-500@2x.webp 2x" width="68" height="86">
+                  <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x" width="161" height="172"> -->
+              <img class="promo__img" src="img/espresso.png" srcset="img/espresso.png 1x, img/espresso@2x.png 2x"
+                width="280" height="280" alt="Баночка кофе.">
+            </picture>
+            <p class="promo__text">Новинка!</p>
+            <h2 class="promo__title">Тройной Эспрессо</h2>
+            <p class="promo__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+              Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="promo__price-wrapper">
+              <p class="promo__price"><span class="promo__old-price">395₽</span><span
+                  class="promo__new-price">3755₽</span></p>
+              <button class="promo__button button button--promo">Заказать</button>
+            </div>
+          </div>
+
+
+          <!-- <div class="promo__slider-controls">
+            <button class="promo__slider-button promo__prev itc-slider__btn_prev" type="button"><span
+                class="visually-hidden">Предыдущий
+                товар</span></button>
+            <button class="promo__slider-button promo__next itc-slider__btn_next" type="button"><span
+                class="visually-hidden">Следующий
+                товар</span></button>
+          </div>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 товар</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 товар</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 товар</span>
+              </button>
+            </li>
+          </ol> -->
 
         </div>
+
+        <div class="promo__slider-controls">
+          <button class="promo__slider-button promo__prev itc-slider__btn_prev" type="button"><span
+              class="visually-hidden">Предыдущий
+              товар</span></button>
+          <button class="promo__slider-button promo__next itc-slider__btn_next" type="button"><span
+              class="visually-hidden">Следующий
+              товар</span></button>
+        </div>
+
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 товар</span>
+            </button>
+          </li>
+        </ol>
 
 
       </div>
@@ -374,6 +468,7 @@
   </footer>
 
   <script src="./js/main-nav.js"></script>
+  <script src="./js//itc-slider.js" defer></script>
   <script src="./js/script.js" defer></script>
 </body>
 
