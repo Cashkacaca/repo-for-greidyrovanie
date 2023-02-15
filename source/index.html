@@ -69,10 +69,11 @@
   <main class="main-container">
     <h1 class="visually-hidden">Drink2Go - интернет-магазин кофейных напитков</h1>
 
-    <section class="promo itc-slider">
+    <section class="promo itc-slider" data-slider="itc-slider">
       <div class="promo__wriper slider itc-slider__wrapper">
         <div class="promo__list slider__wrapper itc-slider__items">
 
+          <!--<div class="promo__item slider__item">-->
           <div class="promo__item slider__item itc-slider__item">
             <picture>
               <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
@@ -93,6 +94,7 @@
             </div>
           </div>
 
+          <!--<div class="promo__item slider__item">-->
           <div class="promo__item slider__item itc-slider__item">
             <picture>
               <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
@@ -113,6 +115,7 @@
           </div>
 
 
+          <!--<div class="promo__item slider__item">-->
           <div class="promo__item slider__item itc-slider__item">
             <picture>
               <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x" width="161" height="172">
@@ -132,34 +135,6 @@
             </div>
           </div>
 
-
-          <!-- <div class="promo__slider-controls">
-            <button class="promo__slider-button promo__prev itc-slider__btn_prev" type="button"><span
-                class="visually-hidden">Предыдущий
-                товар</span></button>
-            <button class="promo__slider-button promo__next itc-slider__btn_next" type="button"><span
-                class="visually-hidden">Следующий
-                товар</span></button>
-          </div>
-
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 товар</span>
-              </button>
-            </li>
-          </ol> -->
-
         </div>
 
         <div class="promo__slider-controls">
@@ -171,19 +146,19 @@
               товар</span></button>
         </div>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+        <ol class="promo__pagination itc-slider__indicators">
+          <li class="promo__pagination__item itc-slider__indicator" data-slide-to="0">
+            <button class="promo__pagination__button slider-pagination-button-current" type="button">
               <span class="visually-hidden">1 товар</span>
             </button>
           </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
+          <li class="promo__pagination__item itc-slider__indicator" data-slide-to="1">
+            <button class="promo__pagination__button" type="button">
               <span class="visually-hidden">2 товар</span>
             </button>
           </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
+          <li class="promo__pagination__item itc-slider__indicator" data-slide-to="2">
+            <button class="promo__pagination__button" type="button">
               <span class="visually-hidden">3 товар</span>
             </button>
           </li>
