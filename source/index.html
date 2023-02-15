@@ -194,9 +194,78 @@
     </section>
 
     <section class="catalog">
-      <div class="catalog__form catalog-form">
+      <p class="catalog__text">Каталог</p>
+      <h2 class="catalog__title">Каталог кофейных напитков</h2>
+      <form class="catalog__filter form" action="https://echo.htmlacademy.ru/" method="post">
 
-      </div>
+        <!-- Выбор диапазона -->
+        <fieldset class="form__group range">
+          <legend class="form__title">Цена</legend>
+
+          <div class="range">
+            <div class="range__scale">
+              <div class="range__bar" style="left: 0; width: 241px">
+                <button class="range__toggle range__toggle--min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range__toggle range__toggle--max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="range__wrapper-inputs">
+              <label class="range__filter-label">
+                <input class="range__input" type="number" min="0" step="1" placeholder="0" name="min-price">
+              </label>
+              <span class="range__filter-separator"></span>
+              <label class="range__filter-label">
+                <input class="range__input" type="number" min="0" step="1" placeholder="900" name="max-price">
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form__group radio">
+          <legend class="form__title">Наличие молока</legend>
+
+          <ul class="form__list radio__list">
+
+            <li class="form__item radio__item">
+              <label class="form__label radio__label">
+                <input class="form__input radio__input" type="radio" name="milk" value="indifferent" checked="checked">
+                <span class="form__text">Неважно</span>
+              </label>
+            </li>
+
+            <li class="form__item radio__item">
+              <label class="form__label radio__label">
+                <input class="form__input radio__input" type="radio" name="milk" value="indifferent">
+                <span class="form__text">Только животное</span>
+              </label>
+            </li>
+
+            <li class="form__item radio__item">
+              <label class="form__label radio__label">
+                <input class="form__input radio__input" type="radio" name="milk" value="indifferent">
+                <span class="form__text">Только растительное</span>
+              </label>
+            </li>
+
+            <li class="form__item radio__item">
+              <label class="form__label radio__label">
+                <input class="form__input radio__input" type="radio" name="milk" value="indifferent" disabled>
+                <span class="form__text">Без молока</span>
+              </label>
+            </li>
+
+
+          </ul>
+
+        </fieldset>
+
+      </form>
 
       <div class="catalog__cards product">
         <ul class="product__list product-card">
