@@ -85,7 +85,7 @@ class ItcSlider {
         return result;
       }
       const slider = new this(elSlider, config, prefix);
-      this.#instances.push({target: elSlider, instance: slider});
+      this.#instances.push({ target: elSlider, instance: slider });
       return slider;
     } catch (e) {
       console.error(e);

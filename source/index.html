@@ -200,7 +200,7 @@
 
         <!-- Выбор диапазона -->
         <fieldset class="form__group range">
-          <legend class="form__title">Цена</legend>
+          <legend class="form__title form__title--range">Цена</legend>
 
           <div class="range">
             <div class="range__scale">
@@ -227,35 +227,37 @@
 
         </fieldset>
 
-        <fieldset class="form__group radio">
+        <!-- Радио кнопки -->
+        <fieldset class="form__group">
           <legend class="form__title">Наличие молока</legend>
 
-          <ul class="form__list radio__list">
+          <ul class="form__list">
 
-            <li class="form__item radio__item">
-              <label class="form__label radio__label">
-                <input class="form__input radio__input" type="radio" name="milk" value="indifferent" checked="checked">
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input form__input--radio" type="radio" name="milk" value="indifferent"
+                  checked="checked">
                 <span class="form__text">Неважно</span>
               </label>
             </li>
 
-            <li class="form__item radio__item">
-              <label class="form__label radio__label">
-                <input class="form__input radio__input" type="radio" name="milk" value="indifferent">
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent">
                 <span class="form__text">Только животное</span>
               </label>
             </li>
 
-            <li class="form__item radio__item">
-              <label class="form__label radio__label">
-                <input class="form__input radio__input" type="radio" name="milk" value="indifferent">
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent">
                 <span class="form__text">Только растительное</span>
               </label>
             </li>
 
-            <li class="form__item radio__item">
-              <label class="form__label radio__label">
-                <input class="form__input radio__input" type="radio" name="milk" value="indifferent" disabled>
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent" disabled>
                 <span class="form__text">Без молока</span>
               </label>
             </li>

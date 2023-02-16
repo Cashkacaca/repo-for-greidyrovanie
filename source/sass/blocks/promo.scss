@@ -127,4 +127,8 @@
 
 .promo__pagination {
   visibility: hidden;
+
+  @media (min-width: $desktop-width) {
+    visibility: visible;
+  }
 }

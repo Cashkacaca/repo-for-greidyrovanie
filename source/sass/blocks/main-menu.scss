@@ -20,29 +20,29 @@
   position: relative;
 
   &::before {
-		position: absolute;
-		left: 0;
+    position: absolute;
+    left: 0;
     right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto auto;
-		content: "";
-		width: 16px;
-		height: 16px;
-		background-color: #333333;
-	}
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #333333;
+  }
 }
 
 .main-menu__link--user {
-	&::before {
-		mask: url("../../img/icons/stack.svg#user") no-repeat center / contain;
-	}
+  &::before {
+    mask: url("../../img/icons/stack.svg#user") no-repeat center / contain;
+  }
 }
 
 .main-menu__link--basket {
-	&::before {
-		mask: url("../../img/icons/stack.svg#basket") no-repeat center / contain;
-	}
+  &::before {
+    mask: url("../../img/icons/stack.svg#basket") no-repeat center / contain;
+  }
 }
 
 .main-menu__link-text {

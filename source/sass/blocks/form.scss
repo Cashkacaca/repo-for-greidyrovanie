@@ -5,8 +5,76 @@
 }
 
 .form__title {
-  padding: 0 0 34px;
+  padding: 0 0 25px;
   font-size: 16px;
   line-height: 1.23;
   color: #333333;
+}
+
+.form__title--range {
+  padding: 0 0 34px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
+}
+
+.form__label {
+  display: grid;
+  grid-template-columns: 24px auto;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.form__input {
+  margin: 0;
+  appearance: none;
+}
+
+.form__input--radio {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #BDBDBD;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.form__input--radio:checked {
+  border-color: #7859CF;
+}
+
+.form__input--radio:checked::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #7859CF;
+}
+
+.form__input--radio[disabled] {
+  border-color: #E2E2E2;
+  background-color: inherit;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.form__input--radio[disabled] + .form__text {
+  color: #BDBDBD
 }
