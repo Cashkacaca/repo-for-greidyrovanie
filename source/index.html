@@ -228,7 +228,7 @@
         </fieldset>
 
         <!-- Радио кнопки -->
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--range">
           <legend class="form__title">Наличие молока</legend>
 
           <ul class="form__list">
@@ -243,21 +243,21 @@
 
             <li class="form__item ">
               <label class="form__label ">
-                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent">
+                <input class="form__input form__input--radio " type="radio" name="milk" value="animal">
                 <span class="form__text">Только животное</span>
               </label>
             </li>
 
             <li class="form__item ">
               <label class="form__label ">
-                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent">
+                <input class="form__input form__input--radio " type="radio" name="milk" value="vegetable">
                 <span class="form__text">Только растительное</span>
               </label>
             </li>
 
             <li class="form__item ">
               <label class="form__label ">
-                <input class="form__input form__input--radio " type="radio" name="milk" value="indifferent" disabled>
+                <input class="form__input form__input--radio " type="radio" name="milk" value="artificial" disabled>
                 <span class="form__text">Без молока</span>
               </label>
             </li>
@@ -266,6 +266,55 @@
           </ul>
 
         </fieldset>
+
+        <!-- Чекбоксы -->
+        <fieldset class="form__group form__group--checkbox">
+          <legend class="form__title">Страна произрастания</legend>
+
+          <ul class="form__list">
+
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input form__input--checkbox" type="checkbox" name="counntry" value="brazil"
+                  checked="checked">
+                <span class="form__text">Бразилия</span>
+              </label>
+            </li>
+
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--checkbox" type="checkbox" name="counntry" value="ethiopia">
+                <span class="form__text">Эфиопия</span>
+              </label>
+            </li>
+
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--checkbox" type="checkbox" name="counntry" value="colombia">
+                <span class="form__text">Колумбия</span>
+              </label>
+            </li>
+
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--checkbox" type="checkbox" name="counntry" value="costa-rica">
+                <span class="form__text">Коста-Рика</span>
+              </label>
+            </li>
+
+            <li class="form__item ">
+              <label class="form__label ">
+                <input class="form__input form__input--checkbox" type="checkbox" name="counntry" value="peru" disabled>
+                <span class="form__text">Перу</span>
+              </label>
+            </li>
+
+
+
+          </ul>
+
+        </fieldset>
+
 
       </form>
 
