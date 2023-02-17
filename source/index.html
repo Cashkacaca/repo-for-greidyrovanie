@@ -309,247 +309,62 @@
               </label>
             </li>
 
-
-
           </ul>
 
         </fieldset>
 
+        <div class="form__wrap-sending-data">
+          <button class="form__button button button--form" type="submit">Применить фильтр</button>
+          <button class="form__button button button-reset" type="reset">Сбросить фильтр</button>
+        </div>
 
       </form>
 
-      <div class="catalog__cards product">
+      <article class="catalog__cards product">
+
+        <h2 class="visually-hidden">Продукция нашего магазина.</h2>
+
+        <div class="product__select select">
+          <span class="select__text">Сортировка:</span>
+          <select class="select__control" aria-label="Сортировка">
+            <option value="default">по умолчанию</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+        </div>
+
         <ul class="product__list product-card">
 
           <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
+            <a class="product-card__link" href="#">
               <picture>
-                <source
+                <!-- <source
                   srcset="img/products/product1-small-desktop@1x.png, img/products/product1-small-desktop@2x.png 2x"
                   type="image/png" media="(min-width: 1280px)">
 
                 <source srcset="img/products/product1-small-tablet@1x.png, img/products/product1-small-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
+                  type="image/png" media="(min-width: 768px)"> -->
 
-                <img class="product-card__image product-card__image--small"
-                  src="img/products/product1-small-mobile@1x.png" srcset="img/products/product1-small-mobile@2x.png 2x"
-                  width="68" height="86" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">500 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Курица</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">700 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source srcset="img/products/product1-desktop@1x.png, img/products/product1-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product1-tablet@1x.png, img/products/product1-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image" src="img/products/product1-mobile@1x.png"
-                  srcset="img/products/product1-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
+                <img class="product-card__image" src="img/white-coffee.png"
+                  srcset="img/white-coffee.png 1x, img/white-coffee@2x.png 2x" width="130" height="188"
+                  alt="Баночка кофе">
 
               </picture>
 
+              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">1000 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Курица</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">1000 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
+            <p class="product-card__description">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="product-card__shop-wrapper">
+              <span class="product-card__price">225₽</span>
+              <button class="product-card__button button button--product-card" type="submit">В корзину</button>
+            </div>
           </li>
 
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source
-                  srcset="img/products/product2-small-desktop@1x.png, img/products/product2-small-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product2-small-tablet@1x.png, img/products/product2-small-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image product-card__image--small"
-                  src="img/products/product2-small-mobile@1x.png" srcset="img/products/product2-small-mobile@2x.png 2x"
-                  width="68" height="86" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">500 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Рыба</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">700 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source srcset="img/products/product2-desktop@1x.png, img/products/product2-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product2-tablet@1x.png, img/products/product2-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image" src="img/products/product2-mobile@1x.png"
-                  srcset="img/products/product2-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">1000 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Рыба</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">1000 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy slim 500 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source
-                  srcset="img/products/product3-small-desktop@1x.png, img/products/product3-small-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product3-small-tablet@1x.png, img/products/product3-small-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image product-card__image--small"
-                  src="img/products/product3-small-mobile@1x.png" srcset="img/products/product3-small-mobile@2x.png 2x"
-                  width="68" height="86" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">500 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Гречка</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">400 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy slim 1000 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source srcset="img/products/product3-desktop@1x.png, img/products/product3-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product3-tablet@1x.png, img/products/product3-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image" src="img/products/product3-mobile@1x.png"
-                  srcset="img/products/product3-mobile@2x.png 2x" width="84" height="101" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">1000 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Гречка</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">700 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item">
-            <a class="product-card__link product-card__link-text" href="#">
-              <h3 class="product-card__title">Cat Energy slim 500 г</h3>
-            </a>
-            <a class="product-card__link product-card__link-image" href="#">
-
-              <picture>
-                <source
-                  srcset="img/products/product4-small-desktop@1x.png, img/products/product4-small-desktop@2x.png 2x"
-                  type="image/png" media="(min-width: 1280px)">
-
-                <source srcset="img/products/product4-small-tablet@1x.png, img/products/product4-small-tablet@2x.png 2x"
-                  type="image/png" media="(min-width: 768px)">
-
-                <img class="product-card__image product-card__image--small"
-                  src="img/products/product4-small-mobile@1x.png" srcset="img/products/product4-small-mobile@2x.png 2x"
-                  width="68" height="86" alt="Баночка кошачей еды">
-
-              </picture>
-
-            </a>
-            <dl class="product-card__description description-product">
-              <dt class="description-product__description">Масса</dt>
-              <dd class="description-product__quantity">500 г</dd>
-              <dt class="description-product__description">Вкус</dt>
-              <dd class="description-product__quantity">Рис</dd>
-              <dt class="description-product__description">Цена</dt>
-              <dd class="description-product__quantity">500 Р.</dd>
-            </dl>
-            <a class="product-card__button button button--product-card" href="#">заказать</a>
-          </li>
-
-          <li class="product-card__item product-card__item--all">
-            <a class="product-card__link product-card__link--all" href="#">
-              <h3 class="product-card__title product-card__title--all">Показать еще 100500 товаров</h3>
-            </a>
-            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
-            <a class="product-card__button button button--product-card button--product-card-all" href="#">показать
-              все</a>
-          </li>
 
         </ul>
-      </div>
+      </article>
     </section>
 
     <section class="map">
