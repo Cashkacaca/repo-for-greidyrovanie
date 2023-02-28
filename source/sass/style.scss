@@ -3,7 +3,6 @@
 @import "global/global";
 @import "global/fonts";
 @import "global/visually-hidden";
-@import "global/itc-slider";
 
 /* BLOCKS */
 @import "blocks/page";
@@ -25,3 +24,8 @@
 @import "blocks/product";
 @import "blocks/product-card";
 @import "blocks/pagination";
+@import "blocks/map";
+
+/* VENDOR */
+@import "vendor/itc-slider";
+@import "vendor/leaflet";
